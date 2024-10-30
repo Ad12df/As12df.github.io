@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaByte - Colección de Tecnología</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="NovaByte"></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Producto.html">Producto</a>
+            <a href="Noticias.html">Noticias</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+            </div>
+            <select id="category">
+                <option value="">Todas las Categorías</option>
+                <option value="laptop">Laptop</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="tablet">Tablet</option>
+                <option value="headphones">Headphones</option>
+                <option value="smartwatch">Smartwatch</option>
+            </select>
+            <select id="price">
+                <option value="">Todos los Precios</option>
+                <option value="0-500">$0 - $500</option>
+                <option value="501-1000">$501 - $1000</option>
+                <option value="1001-2000">$1001 - $2000</option>
+                <option value="2001+">$2001+</option>
+            </select>
+        </div>
+
+        <div class="products-grid">
+            <!-- Lenovo Yoga -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Lenovo Yoga.png" alt="Lenovo Yoga 9i" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Lenovo Yoga 9i</h3>
+                    <p class="product-category">Laptop</p>
+                    <p class="product-price">$1,699</p>
+                    <p class="product-description">Laptop convertible con pantalla táctil 4K, procesador Intel de última
+                        generación, y diseño ultradelgado.</p>
+                </div>
+            </div>
+
+            <!-- Xiaomi Mi 13 -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Xiaomi Mi 13 Pro.png" alt="Xiaomi Mi 13 Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Xiaomi Mi 13 Pro</h3>
+                    <p class="product-category">Smartphone</p>
+                    <p class="product-price">$899</p>
+                    <p class="product-description">Smartphone de alta gama con pantalla AMOLED, cámara de 200 MP y carga
+                        rápida de 120W.</p>
+                </div>
+            </div>
+
+            <!-- Huawei MatePad Pro -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Huawei MatePad Pro.png" alt="Huawei MatePad Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Huawei MatePad Pro</h3>
+                    <p class="product-category">Tablet</p>
+                    <p class="product-price">$749</p>
+                    <p class="product-description">Tableta profesional con pantalla OLED de 12.6 pulgadas, sonido
+                        envolvente y soporte para lápiz óptico.</p>
+                </div>
+            </div>
+
+            <!-- Sony WH-1000XM5 -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Sony-WH-1000XM5.png" alt="Sony WH-1000XM5" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Sony WH-1000XM5</h3>
+                    <p class="product-category">Headphones</p>
+                    <p class="product-price">$349</p>
+                    <p class="product-description">Auriculares inalámbricos con cancelación de ruido de última
+                        generación y sonido de alta fidelidad.</p>
+                </div>
+            </div>
+
+            <!-- Garmin Venu 2 -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Garmin Venu 2.jpg" alt="Garmin Venu 2" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Garmin Venu 2</h3>
+                    <p class="product-category">Smartwatch</p>
+                    <p class="product-price">$399</p>
+                    <p class="product-description">Reloj inteligente con GPS integrado, monitoreo de salud avanzado y
+                        batería de larga duración.</p>
+                </div>
+            </div>
+
+            <!-- Samsung TV -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Samsung QLED 4K.png" alt="Samsung QLED 4K" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Samsung QLED 4K</h3>
+                    <p class="product-category">Televisor</p>
+                    <p class="product-price">$1,299</p>
+                    <p class="product-description">Televisor 4K con tecnología QLED que ofrece imágenes de alta calidad
+                        y colores vibrantes.</p>
+                </div>
+            </div>
+
+            <!-- iPhone 14 -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/iphone 14.png" alt="iPhone 14" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">iPhone 14</h3>
+                    <p class="product-category">Smartphone</p>
+                    <p class="product-price">$1,099</p>
+                    <p class="product-description">Smartphone de última generación con cámara mejorada y potente
+                        procesador A16 Bionic.</p>
+                </div>
+            </div>
+
+            <!-- Xiaomi Mi Notebook Pro X -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Xiaomi-Mi-Notebook-Pro-X.png" alt="Xiaomi Mi Notebook Pro X" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Xiaomi Mi Notebook Pro X</h3>
+                    <p class="product-category">Laptop</p>
+                    <p class="product-price">$1,499</p>
+                    <p class="product-description">Portátil potente con pantalla OLED, procesador Intel i7 y gráficos
+                        NVIDIA GTX, ideal para diseño y trabajo intenso.</p>
+                </div>
+            </div>
+
+            <!-- Huawei P60 Pro -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Huawei P60 Pro.png" alt="Huawei P60 Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Huawei P60 Pro</h3>
+                    <p class="product-category">Smartphone</p>
+                    <p class="product-price">$999</p>
+                    <p class="product-description">Smartphone de gama alta con cámara de 50 MP, procesador Kirin 990 y
+                        carga rápida de 66W para una experiencia excepcional.</p>
+                </div>
+            </div>
+
+            <!-- Lenovo Tab P12 Pro -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/Lenovo Tab P12 Pro.jpg" alt="Lenovo Tab P12 Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Lenovo Tab P12 Pro</h3>
+                    <p class="product-category">Tablet</p>
+                    <p class="product-price">$799</p>
+                    <p class="product-description">Tablet de 12.6 pulgadas con pantalla AMOLED y soporte para lápiz
+                        óptico, perfecta para entretenimiento y productividad.</p>
+                </div>
+            </div>
+
+            <!-- ASUS ROG Zephyrus -->
+            <div class="product-card" onclick="openModal(this)">
+                <img src="images/ASUS ROG Zephyrus.png" alt="ASUS ROG Zephyrus" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">ASUS ROG Zephyrus</h3>
+                    <p class="product-category">Laptop</p>
+                    <p class="product-price">$1,799</p>
+                    <p class="product-description">Laptop gaming con procesador AMD Ryzen 9, gráficos NVIDIA RTX y
+                        pantalla de 144Hz para un rendimiento superior.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-button">×</button>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <h2 class="product-name" id="modalName"></h2>
+            <p class="product-category" id="modalCategory"></p>
+            <p class="modal-description" id="modalDescription"></p>
+            <p class="product-price" id="modalPrice"></p>
+            <button class="buy-button">Comprar Ahora</button>
+        </div>
+    </div>
+    <div class="modal" id="purchaseModal">
+        <div class="modal-content">
+            <button class="close-button">×</button>
+            <h2>Completar Compra</h2>
+            <form id="purchaseForm" class="purchase-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección de Envío:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Método de Pago:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Seleccionar método de pago</option>
+                        <option value="credit">Tarjeta de Crédito</option>
+                        <option value="debit">Tarjeta de Débito</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                <div class="purchase-summary">
+                    <h3>Resumen de Compra</h3>
+                    <p>Producto: <span id="summaryName"></span></p>
+                    <p>Precio: <span id="summaryPrice"></span></p>
+                </div>
+                <button type="submit" class="confirm-button">Confirmar Compra</button>
+            </form>
+        </div>
+    </div>>
+    <script src="java script/main.js"></script>
+</body>
+
+</html>

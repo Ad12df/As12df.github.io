@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaByte - Colección de Tecnología</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="NovaByte"></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Producto.html">Producto</a>
+            <a href="Noticias.html">Noticias</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="news-item">
+            <h2>Inteligencia Artificial Generativa en Auge</h2>
+            <img src="images/noticia 1.png" alt="IA generativa en el trabajo" class="news-image">
+            <p>Grandes avances en IA generativa están impactando en múltiples industrias...</p>
+            <span class="read-more" onclick="openModal('modal1')">Leer más</span>
+        </div>
+
+        <div class="news-item">
+            <h2>Computación Cuántica Avanza en Empresas y Universidades</h2>
+            <img src="images/noticia 2.jpg" alt="Computadora cuántica en operación" class="news-image">
+            <p>Varias empresas han logrado progresos en computación cuántica...</p>
+            <span class="read-more" onclick="openModal('modal2')">Leer más</span>
+        </div>
+
+        <div class="news-item">
+            <h2>Tecnología en Energías Renovables</h2>
+            <img src="images/noticia 3.jpeg" alt="Paneles solares y baterías de almacenamiento" class="news-image">
+            <p>Innovaciones en almacenamiento de energía están facilitando la transición a energías sostenibles...</p>
+            <span class="read-more" onclick="openModal('modal3')">Leer más</span>
+        </div>
+
+        <div class="news-item">
+            <h2>5G y Pruebas de Conectividad 6G</h2>
+            <img src="images/noticia.jpg" alt="Antena 5G y 6G" class="news-image">
+            <p>Con el despliegue mundial de 5G, ya se están realizando pruebas iniciales para la tecnología 6G...</p>
+            <span class="read-more" onclick="openModal('modal4')">Leer más</span>
+        </div>
+    </div>
+
+    <!-- Modal IA Generativa -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Inteligencia Artificial Generativa en Auge</h2>
+            <img src="images/noticia 1.png" alt="IA generativa en el trabajo" class="modal-image">
+            <p>Grandes avances en IA generativa están impactando en múltiples industrias, desde contenido digital y marketing hasta programación y diseño de productos. Estas herramientas permiten crear rápidamente contenido detallado y automatizar tareas complejas, facilitando procesos que antes requerían mucha intervención humana.</p>
+        </div>
+    </div>
+
+    <!-- Modal Computación Cuántica -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Computación Cuántica Avanza en Empresas y Universidades</h2>
+            <img src="images/noticia 2.jpg" alt="Computadora cuántica en operación" class="modal-image">
+            <p>Varias empresas de tecnología, como IBM y Google, han logrado avances significativos en computación cuántica, brindando acceso a esta tecnología para investigaciones avanzadas en física, química y análisis de datos complejos.</p>
+        </div>
+    </div>
+
+    <!-- Modal Energías Renovables -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Tecnología en Energías Renovables</h2>
+            <img src="images/noticia 3.jpeg" alt="Paneles solares y baterías de almacenamiento" class="modal-image">
+            <p>Innovaciones como las baterías de flujo y tecnologías de hidrógeno están avanzando rápidamente, permitiendo una transición hacia energías más sostenibles y mejorando el almacenamiento para el uso de energías renovables en ciudades y transporte.</p>
+        </div>
+    </div>
+
+    <!-- Modal 5G y 6G -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>5G y Pruebas de Conectividad 6G</h2>
+            <img src="images/noticia.jpg" Antena 5G y 6G" class="modal-image">
+            <p>Con el despliegue mundial de 5G, se están llevando a cabo pruebas iniciales para la tecnología 6G. Esta conectividad podría facilitar velocidades de transmisión mucho mayores, potenciando ciudades inteligentes y tecnologías como los vehículos autónomos.</p>
+        </div>
+    </div>
+
+<script src="java script/chiquito.js"></script>
+</body>
+
+</html>
